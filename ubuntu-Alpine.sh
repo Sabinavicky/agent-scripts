@@ -1,6 +1,8 @@
-D="centos"
+
 #!/bin/bash
-ID_LIKE="rhel fedora"
+# author: sabina
+# Date: oct 2022
+
 apt install wget -y
 
 if
@@ -19,15 +21,15 @@ if
 	   apt git -y
 
    else
-
-	   apk install net-tools -y
-	   apk install sysstat -y
-	   apk install finger -y
-	   apk  install gcc -y
-	   apk install make -y
-	   apk install python3 -y
-	   apk epel-release -y
-	   apk git -y
+           echo "this installation package in Alpine"
+	   apk add net-tools -y
+	   apk add sysstat -y
+	   apk add finger -y
+	   apk  add gcc -y
+	   apk add make -y
+	   apk add python3 -y
+	   apk add epel-release -y
+	   apk add git -y
 
 fi
  
